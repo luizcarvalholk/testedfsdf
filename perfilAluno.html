@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Formulário de Inscrição</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  <style>
+    .container {
+      width: 600px;
+      margin: auto;
+      border: 1px solid darkblue;
+      padding: 20px;
+      margin-top: 50px;
+      background-color: whitesmoke;
+    }
+    body{
+ 
+ background: linear-gradient(to right, rgb(0, 0, 0), rgb(0, 34, 53), 
+   rgb(0, 34, 53), rgb(0, 0, 0));
+  
+}
+.che{
+background-color:  rgb(0, 50, 78);
+}
+img.logo{
+    width: 40px;
+
+}
+
+  </style>
+
+</head>
+
+<body>
+
+  <nav class="navbar navbar-expand-sm navbar-dark che">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="javascript:void(0)"><img class="logo" src="fotor-2024020614183.png" alt=""></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mynavbar">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="mynavbar">
+        <ul class="navbar-nav me-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="feedback.html">Feedback</a>
+          </li> 
+          <li class="nav-item">
+            <a class="nav-link active" href="perfilAluno.html">Perfil</a>
+          </li>
+         
+          <li class="nav-item">
+            <a class="nav-link" href="empresasAluno.html">Empresas</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="atividades.html">Atividades</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="notasAluno.html">Notas</a>
+          </li>
+  
+  
+        </ul>    
+      </div>
+    </div>
+  </nav>
+
+
+
+  <div class="container mt-5 form-control">
+    <h2 class="text-center">Dados do Aluno</h2>
+
+    <div class="mt-4">
+      
+      <label for="nomeCompleto" class="form-label">Nome completo</label>
+      <input type="text" class="form-control" id="nomeCompleto" value="Fulano">
+
+    </div>
+
+    <div class="mt-4">
+      <h3>Contato</h3>
+      <label for="whatsapp" class="form-label">Whatsapp</label>
+      <input type="text" class="form-control" id="whatsapp" value="(00) 0 0000-0000">
+
+      <label for="email" class="form-label">E-mail</label>
+      <input type="email" class="form-control" id="email" value=" ">
+
+      
+    </div>
+
+   
+    <div class="mt-4">
+      <h3>Endereço</h3>
+      <label for="cep" class="form-label">CEP</label>
+      <input type="text" class="form-control" id="cep" value="00000-0000">
+
+ 
+    </div>
+
+ 
+    <div class="mt-4">
+      <h3>Informações Adicionais</h3>
+      <label for="idiomas" class="form-label">Possui segundo idioma?</label>
+      <select class="form-select" id="idiomas">
+        <option selected>Não</option>
+        <option>Sim</option>
+      </select>
+
+      <label for="linguagens" class="form-label">Conhece alguma linguagem de programação? Quais?</label>
+      <textarea class="form-control" id="linguagens" rows="3">  </textarea>
+
+   
+    </div>
+
+ 
+    <div class="mt-4">
+      <h3>Anexos</h3>
+      <label for="curriculo" class="form-label">Currículo</label>
+      <input class="form-control" type="file" id="curriculo">
+
+ 
+    </div>
+
+    
+    <div class="mt-4 text-center">
+      <button type="button" class="btn btn-primary">Salvar</button>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+    crossorigin="anonymous"></script>
+
+</body>
+
+</html>

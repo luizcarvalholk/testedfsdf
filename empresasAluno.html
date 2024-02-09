@@ -1,0 +1,164 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  </head>
+<style>
+body{
+ 
+  background: linear-gradient(to right, rgb(0, 0, 0), rgb(0, 34, 53), 
+    rgb(0, 34, 53), rgb(0, 0, 0));
+   
+}
+
+
+div.ks{
+    margin-top: 150px;
+}
+div.lz{
+    margin-top: 50px;
+}
+div.le{
+    margin-left: 80px;
+}
+div.su{
+width: 400px;
+background-color: whitesmoke;
+margin-top: 75px;
+}
+
+img.logo{
+    width: 40px;
+
+}
+.che{
+background-color:  rgb(0, 50, 78);
+}
+.button:hover {
+  background-color: #0b4fb6;
+  box-shadow: 0 6px 8px 0 rgba(0,0,0,0.24),0 6px 8px 0 rgba(0,0,0,0.19);
+}
+a{
+  cursor: pointer;
+  -webkit-transition-duration: 0.4s; /* Safari */
+  transition-duration: 0.4s;
+}
+</style>
+  <body>
+
+
+    <nav class="navbar navbar-expand-sm navbar-dark che">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="javascript:void(0)"><img class="logo" src="fotor-2024020614183.png" alt=""></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mynavbar">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="mynavbar">
+          <ul class="navbar-nav me-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="feedback.html">Feedback</a>
+            </li> 
+            <li class="nav-item">
+              <a class="nav-link " href="perfilAluno.html">Perfil</a>
+            </li>
+           
+            <li class="nav-item">
+              <a class="nav-link active" href="empresasAluno.html">Empresas</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="atividades.html">Atividades</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="notasAluno.html">Notas</a>
+            </li>
+    
+    
+          </ul>    
+        </div>
+      </div>
+    </nav>
+
+<div>
+   <div class="flex-container"> <div class="d-flex justify-content-center"><div class="d-flex justify-content-center form-control su"> <h2 class="">Empresas afiliadas</h2></div></div>
+<div class="d-flex justify-content-center ks " >
+<div class="card d-flex border-dark" style="width: 18rem;">
+    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAJUAAACUCAMAAACtIJvYAAAAV1BMVEUHw5r///8AwJQAvpD6/fzz+/js+fTv+vaR3MaE2L/2/Pqa3sif38vf9O3m9vEwxp+r49F8171q0rQ/yaVz07bH7OHY8upYzq1Ny6diz6++6tyz5dWN2sHo3RVnAAADjElEQVR4nO2bXZuiMAyF2wAiOIjKKH7M//+di+uM05yg7M0muei59aLneUnTJo0hZGVlZWVlZWVpinqytiBFzfZs7UGI9mXsrE2gaN/GGD98fUPax7uq3tpIqgepSWtHsL5JTbpaW/kVNeWPq621l6fo82kqll4CKyE1yYmrlJQbVpyUk7jipGI8Whu6C0jFuHGQr5BUbAdrS5OpLzAVd4W1p4kUeIq1/Q6UpNqLeVTRAUnFvb0pQar8tDflkxR6Kg/2pjKpfzXlktTeI6keU4IDUqHfoil7UqG4OSRFo7+YmnT0R0ruPxekipM/UiEMDkkF2jFTDZoyMsk+4I6boKESNlU0VompFi2cbOKMlw/QqqL17EdVcPWRmKqwNbsy2pVFmkKhdn/eudRpsWx1hQ/4PB+1aRWrxBV2FLrXCeM/u6oTV1987T7Znrq0GCvYguwuqEqr6JKVb+CqTbOGJi2+B1/GlTItdgzWvFVFV+ZKkRa/XXEcokbUozWmIV1DYNVWtnoWPDxjseNI1RaxAgdbQ52RLahwqjNbdhTla6PTJi14iVqzliNdpC0VWrjTakZLtkVKHVo9BA/SatGXCi1REC7R0omtAovnykVsDRWs6oKW6H8grdEktmiDqy7S0ujEUyNoHRZonRVsFTtcFWhd8PetxrNTIVrbS7F1VMkP4oJQj+9pqTyHLdLCLN+pPB1KWqv3sbXXcDVDq31La6Vzq5GXz/e0NLJDmKPFZ9XgBf+qdWEWtOAqz/KaTrxPKtYYWnxl1piIFyVXkhbvPhBzrbML70JaMKs2pP2Sm1JgBXGDgJkiSu+IJ8XBEE4L5q9YvCtlrO+VGS1wlSaPSnWIJo1pZJUWH63uaE9Ca+uGVUoL+91mccVsQWfZbA8yWzirNqR9CcV8xW3BwrzuaNRNPfLWCg5g3sJROwdT0bqCt1V+DKrdGcDWCKZ4paN1v3ovGngjxOQDomjgTWXtHDorGqD0+nLwAZGUTk2/ZOqMJb2DeQxByuC0kaYEqdp+alqScjC6QmfRsLX/l84MKftR/BlSG/NInyFl/480p6TwiSDH1AtTLknhLcEDKRiv87H74JL+15QDUmHlj5R8cnJBim7+SAWcsXBiqq8cmuKzal5MsVk1+4z+VOePVDqr5ojUbwfUEanwnFXzRCr8NGZ9kQqPvw85I3XX6I/UXQ7aLllZWVlZWVlZ9voDbFkjXMHW5j4AAAAASUVORK5CYII=" class="card-img-top" alt="">
+    <div class="card-body">
+      <h5 class="card-title">SENIOR</h5>
+      <p class="card-text">empresa de tecnologia</p>
+      <a href="#" class="btn btn-primary button">Go somewhere</a>
+    </div>
+  </div>
+
+  <div class="card le border-dark" style="width: 18rem;">
+    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAJUAAACUCAMAAACtIJvYAAAAV1BMVEUHw5r///8AwJQAvpD6/fzz+/js+fTv+vaR3MaE2L/2/Pqa3sif38vf9O3m9vEwxp+r49F8171q0rQ/yaVz07bH7OHY8upYzq1Ny6diz6++6tyz5dWN2sHo3RVnAAADjElEQVR4nO2bXZuiMAyF2wAiOIjKKH7M//+di+uM05yg7M0muei59aLneUnTJo0hZGVlZWVlZWVpinqytiBFzfZs7UGI9mXsrE2gaN/GGD98fUPax7uq3tpIqgepSWtHsL5JTbpaW/kVNeWPq621l6fo82kqll4CKyE1yYmrlJQbVpyUk7jipGI8Whu6C0jFuHGQr5BUbAdrS5OpLzAVd4W1p4kUeIq1/Q6UpNqLeVTRAUnFvb0pQar8tDflkxR6Kg/2pjKpfzXlktTeI6keU4IDUqHfoil7UqG4OSRFo7+YmnT0R0ruPxekipM/UiEMDkkF2jFTDZoyMsk+4I6boKESNlU0VompFi2cbOKMlw/QqqL17EdVcPWRmKqwNbsy2pVFmkKhdn/eudRpsWx1hQ/4PB+1aRWrxBV2FLrXCeM/u6oTV1987T7Znrq0GCvYguwuqEqr6JKVb+CqTbOGJi2+B1/GlTItdgzWvFVFV+ZKkRa/XXEcokbUozWmIV1DYNVWtnoWPDxjseNI1RaxAgdbQ52RLahwqjNbdhTla6PTJi14iVqzliNdpC0VWrjTakZLtkVKHVo9BA/SatGXCi1REC7R0omtAovnykVsDRWs6oKW6H8grdEktmiDqy7S0ujEUyNoHRZonRVsFTtcFWhd8PetxrNTIVrbS7F1VMkP4oJQj+9pqTyHLdLCLN+pPB1KWqv3sbXXcDVDq31La6Vzq5GXz/e0NLJDmKPFZ9XgBf+qdWEWtOAqz/KaTrxPKtYYWnxl1piIFyVXkhbvPhBzrbML70JaMKs2pP2Sm1JgBXGDgJkiSu+IJ8XBEE4L5q9YvCtlrO+VGS1wlSaPSnWIJo1pZJUWH63uaE9Ca+uGVUoL+91mccVsQWfZbA8yWzirNqR9CcV8xW3BwrzuaNRNPfLWCg5g3sJROwdT0bqCt1V+DKrdGcDWCKZ4paN1v3ovGngjxOQDomjgTWXtHDorGqD0+nLwAZGUTk2/ZOqMJb2DeQxByuC0kaYEqdp+alqScjC6QmfRsLX/l84MKftR/BlSG/NInyFl/480p6TwiSDH1AtTLknhLcEDKRiv87H74JL+15QDUmHlj5R8cnJBim7+SAWcsXBiqq8cmuKzal5MsVk1+4z+VOePVDqr5ojUbwfUEanwnFXzRCr8NGZ9kQqPvw85I3XX6I/UXQ7aLllZWVlZWVlZ9voDbFkjXMHW5j4AAAAASUVORK5CYII=" class="card-img-top" alt="">
+    <div class="card-body">
+      <h5 class="card-title">SENIOR</h5>
+      <p class="card-text">empresa de tecnologia</p>
+      <a href="#"  class="btn btn-primary button">Go somewhere</a>
+    </div>
+  </div>
+
+  <div class="card le border-dark" style="width: 18rem;">
+    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAJUAAACUCAMAAACtIJvYAAAAV1BMVEUHw5r///8AwJQAvpD6/fzz+/js+fTv+vaR3MaE2L/2/Pqa3sif38vf9O3m9vEwxp+r49F8171q0rQ/yaVz07bH7OHY8upYzq1Ny6diz6++6tyz5dWN2sHo3RVnAAADjElEQVR4nO2bXZuiMAyF2wAiOIjKKH7M//+di+uM05yg7M0muei59aLneUnTJo0hZGVlZWVlZWVpinqytiBFzfZs7UGI9mXsrE2gaN/GGD98fUPax7uq3tpIqgepSWtHsL5JTbpaW/kVNeWPq621l6fo82kqll4CKyE1yYmrlJQbVpyUk7jipGI8Whu6C0jFuHGQr5BUbAdrS5OpLzAVd4W1p4kUeIq1/Q6UpNqLeVTRAUnFvb0pQar8tDflkxR6Kg/2pjKpfzXlktTeI6keU4IDUqHfoil7UqG4OSRFo7+YmnT0R0ruPxekipM/UiEMDkkF2jFTDZoyMsk+4I6boKESNlU0VompFi2cbOKMlw/QqqL17EdVcPWRmKqwNbsy2pVFmkKhdn/eudRpsWx1hQ/4PB+1aRWrxBV2FLrXCeM/u6oTV1987T7Znrq0GCvYguwuqEqr6JKVb+CqTbOGJi2+B1/GlTItdgzWvFVFV+ZKkRa/XXEcokbUozWmIV1DYNVWtnoWPDxjseNI1RaxAgdbQ52RLahwqjNbdhTla6PTJi14iVqzliNdpC0VWrjTakZLtkVKHVo9BA/SatGXCi1REC7R0omtAovnykVsDRWs6oKW6H8grdEktmiDqy7S0ujEUyNoHRZonRVsFTtcFWhd8PetxrNTIVrbS7F1VMkP4oJQj+9pqTyHLdLCLN+pPB1KWqv3sbXXcDVDq31La6Vzq5GXz/e0NLJDmKPFZ9XgBf+qdWEWtOAqz/KaTrxPKtYYWnxl1piIFyVXkhbvPhBzrbML70JaMKs2pP2Sm1JgBXGDgJkiSu+IJ8XBEE4L5q9YvCtlrO+VGS1wlSaPSnWIJo1pZJUWH63uaE9Ca+uGVUoL+91mccVsQWfZbA8yWzirNqR9CcV8xW3BwrzuaNRNPfLWCg5g3sJROwdT0bqCt1V+DKrdGcDWCKZ4paN1v3ovGngjxOQDomjgTWXtHDorGqD0+nLwAZGUTk2/ZOqMJb2DeQxByuC0kaYEqdp+alqScjC6QmfRsLX/l84MKftR/BlSG/NInyFl/480p6TwiSDH1AtTLknhLcEDKRiv87H74JL+15QDUmHlj5R8cnJBim7+SAWcsXBiqq8cmuKzal5MsVk1+4z+VOePVDqr5ojUbwfUEanwnFXzRCr8NGZ9kQqPvw85I3XX6I/UXQ7aLllZWVlZWVlZ9voDbFkjXMHW5j4AAAAASUVORK5CYII=" class="card-img-top" alt="">
+    <div class="card-body">
+      <h5 class="card-title">SENIOR</h5>
+      <p class="card-text">empresa de tecnologia</p>
+      <a href="#"  class="btn btn-primary button">Go somewhere</a>
+    </div>
+  </div>
+</div>
+
+<div class="d-flex justify-content-center lz"  >
+    <div class="card d-flex border-dark" style="width: 18rem;">
+        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAJUAAACUCAMAAACtIJvYAAAAV1BMVEUHw5r///8AwJQAvpD6/fzz+/js+fTv+vaR3MaE2L/2/Pqa3sif38vf9O3m9vEwxp+r49F8171q0rQ/yaVz07bH7OHY8upYzq1Ny6diz6++6tyz5dWN2sHo3RVnAAADjElEQVR4nO2bXZuiMAyF2wAiOIjKKH7M//+di+uM05yg7M0muei59aLneUnTJo0hZGVlZWVlZWVpinqytiBFzfZs7UGI9mXsrE2gaN/GGD98fUPax7uq3tpIqgepSWtHsL5JTbpaW/kVNeWPq621l6fo82kqll4CKyE1yYmrlJQbVpyUk7jipGI8Whu6C0jFuHGQr5BUbAdrS5OpLzAVd4W1p4kUeIq1/Q6UpNqLeVTRAUnFvb0pQar8tDflkxR6Kg/2pjKpfzXlktTeI6keU4IDUqHfoil7UqG4OSRFo7+YmnT0R0ruPxekipM/UiEMDkkF2jFTDZoyMsk+4I6boKESNlU0VompFi2cbOKMlw/QqqL17EdVcPWRmKqwNbsy2pVFmkKhdn/eudRpsWx1hQ/4PB+1aRWrxBV2FLrXCeM/u6oTV1987T7Znrq0GCvYguwuqEqr6JKVb+CqTbOGJi2+B1/GlTItdgzWvFVFV+ZKkRa/XXEcokbUozWmIV1DYNVWtnoWPDxjseNI1RaxAgdbQ52RLahwqjNbdhTla6PTJi14iVqzliNdpC0VWrjTakZLtkVKHVo9BA/SatGXCi1REC7R0omtAovnykVsDRWs6oKW6H8grdEktmiDqy7S0ujEUyNoHRZonRVsFTtcFWhd8PetxrNTIVrbS7F1VMkP4oJQj+9pqTyHLdLCLN+pPB1KWqv3sbXXcDVDq31La6Vzq5GXz/e0NLJDmKPFZ9XgBf+qdWEWtOAqz/KaTrxPKtYYWnxl1piIFyVXkhbvPhBzrbML70JaMKs2pP2Sm1JgBXGDgJkiSu+IJ8XBEE4L5q9YvCtlrO+VGS1wlSaPSnWIJo1pZJUWH63uaE9Ca+uGVUoL+91mccVsQWfZbA8yWzirNqR9CcV8xW3BwrzuaNRNPfLWCg5g3sJROwdT0bqCt1V+DKrdGcDWCKZ4paN1v3ovGngjxOQDomjgTWXtHDorGqD0+nLwAZGUTk2/ZOqMJb2DeQxByuC0kaYEqdp+alqScjC6QmfRsLX/l84MKftR/BlSG/NInyFl/480p6TwiSDH1AtTLknhLcEDKRiv87H74JL+15QDUmHlj5R8cnJBim7+SAWcsXBiqq8cmuKzal5MsVk1+4z+VOePVDqr5ojUbwfUEanwnFXzRCr8NGZ9kQqPvw85I3XX6I/UXQ7aLllZWVlZWVlZ9voDbFkjXMHW5j4AAAAASUVORK5CYII=" class="card-img-top" alt="">
+        <div class="card-body">
+          <h5 class="card-title">SENIOR</h5>
+          <p class="card-text">empresa de tecnologia</p>
+          <a href="#" class="btn btn-primary button">Go somewhere</a>
+        </div>
+      </div>
+    
+      <div class="card le border-dark" style="width: 18rem;">
+        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAJUAAACUCAMAAACtIJvYAAAAV1BMVEUHw5r///8AwJQAvpD6/fzz+/js+fTv+vaR3MaE2L/2/Pqa3sif38vf9O3m9vEwxp+r49F8171q0rQ/yaVz07bH7OHY8upYzq1Ny6diz6++6tyz5dWN2sHo3RVnAAADjElEQVR4nO2bXZuiMAyF2wAiOIjKKH7M//+di+uM05yg7M0muei59aLneUnTJo0hZGVlZWVlZWVpinqytiBFzfZs7UGI9mXsrE2gaN/GGD98fUPax7uq3tpIqgepSWtHsL5JTbpaW/kVNeWPq621l6fo82kqll4CKyE1yYmrlJQbVpyUk7jipGI8Whu6C0jFuHGQr5BUbAdrS5OpLzAVd4W1p4kUeIq1/Q6UpNqLeVTRAUnFvb0pQar8tDflkxR6Kg/2pjKpfzXlktTeI6keU4IDUqHfoil7UqG4OSRFo7+YmnT0R0ruPxekipM/UiEMDkkF2jFTDZoyMsk+4I6boKESNlU0VompFi2cbOKMlw/QqqL17EdVcPWRmKqwNbsy2pVFmkKhdn/eudRpsWx1hQ/4PB+1aRWrxBV2FLrXCeM/u6oTV1987T7Znrq0GCvYguwuqEqr6JKVb+CqTbOGJi2+B1/GlTItdgzWvFVFV+ZKkRa/XXEcokbUozWmIV1DYNVWtnoWPDxjseNI1RaxAgdbQ52RLahwqjNbdhTla6PTJi14iVqzliNdpC0VWrjTakZLtkVKHVo9BA/SatGXCi1REC7R0omtAovnykVsDRWs6oKW6H8grdEktmiDqy7S0ujEUyNoHRZonRVsFTtcFWhd8PetxrNTIVrbS7F1VMkP4oJQj+9pqTyHLdLCLN+pPB1KWqv3sbXXcDVDq31La6Vzq5GXz/e0NLJDmKPFZ9XgBf+qdWEWtOAqz/KaTrxPKtYYWnxl1piIFyVXkhbvPhBzrbML70JaMKs2pP2Sm1JgBXGDgJkiSu+IJ8XBEE4L5q9YvCtlrO+VGS1wlSaPSnWIJo1pZJUWH63uaE9Ca+uGVUoL+91mccVsQWfZbA8yWzirNqR9CcV8xW3BwrzuaNRNPfLWCg5g3sJROwdT0bqCt1V+DKrdGcDWCKZ4paN1v3ovGngjxOQDomjgTWXtHDorGqD0+nLwAZGUTk2/ZOqMJb2DeQxByuC0kaYEqdp+alqScjC6QmfRsLX/l84MKftR/BlSG/NInyFl/480p6TwiSDH1AtTLknhLcEDKRiv87H74JL+15QDUmHlj5R8cnJBim7+SAWcsXBiqq8cmuKzal5MsVk1+4z+VOePVDqr5ojUbwfUEanwnFXzRCr8NGZ9kQqPvw85I3XX6I/UXQ7aLllZWVlZWVlZ9voDbFkjXMHW5j4AAAAASUVORK5CYII=" class="card-img-top" alt="">
+        <div class="card-body">
+          <h5 class="card-title">SENIOR</h5>
+          <p class="card-text">empresa de tecnologia</p>
+          <a href="#" class="btn btn-primary button">Go somewhere</a>
+        </div>
+      </div>
+    
+      <div class="card le border-dark" style="width: 18rem;">
+        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAJUAAACUCAMAAACtIJvYAAAAV1BMVEUHw5r///8AwJQAvpD6/fzz+/js+fTv+vaR3MaE2L/2/Pqa3sif38vf9O3m9vEwxp+r49F8171q0rQ/yaVz07bH7OHY8upYzq1Ny6diz6++6tyz5dWN2sHo3RVnAAADjElEQVR4nO2bXZuiMAyF2wAiOIjKKH7M//+di+uM05yg7M0muei59aLneUnTJo0hZGVlZWVlZWVpinqytiBFzfZs7UGI9mXsrE2gaN/GGD98fUPax7uq3tpIqgepSWtHsL5JTbpaW/kVNeWPq621l6fo82kqll4CKyE1yYmrlJQbVpyUk7jipGI8Whu6C0jFuHGQr5BUbAdrS5OpLzAVd4W1p4kUeIq1/Q6UpNqLeVTRAUnFvb0pQar8tDflkxR6Kg/2pjKpfzXlktTeI6keU4IDUqHfoil7UqG4OSRFo7+YmnT0R0ruPxekipM/UiEMDkkF2jFTDZoyMsk+4I6boKESNlU0VompFi2cbOKMlw/QqqL17EdVcPWRmKqwNbsy2pVFmkKhdn/eudRpsWx1hQ/4PB+1aRWrxBV2FLrXCeM/u6oTV1987T7Znrq0GCvYguwuqEqr6JKVb+CqTbOGJi2+B1/GlTItdgzWvFVFV+ZKkRa/XXEcokbUozWmIV1DYNVWtnoWPDxjseNI1RaxAgdbQ52RLahwqjNbdhTla6PTJi14iVqzliNdpC0VWrjTakZLtkVKHVo9BA/SatGXCi1REC7R0omtAovnykVsDRWs6oKW6H8grdEktmiDqy7S0ujEUyNoHRZonRVsFTtcFWhd8PetxrNTIVrbS7F1VMkP4oJQj+9pqTyHLdLCLN+pPB1KWqv3sbXXcDVDq31La6Vzq5GXz/e0NLJDmKPFZ9XgBf+qdWEWtOAqz/KaTrxPKtYYWnxl1piIFyVXkhbvPhBzrbML70JaMKs2pP2Sm1JgBXGDgJkiSu+IJ8XBEE4L5q9YvCtlrO+VGS1wlSaPSnWIJo1pZJUWH63uaE9Ca+uGVUoL+91mccVsQWfZbA8yWzirNqR9CcV8xW3BwrzuaNRNPfLWCg5g3sJROwdT0bqCt1V+DKrdGcDWCKZ4paN1v3ovGngjxOQDomjgTWXtHDorGqD0+nLwAZGUTk2/ZOqMJb2DeQxByuC0kaYEqdp+alqScjC6QmfRsLX/l84MKftR/BlSG/NInyFl/480p6TwiSDH1AtTLknhLcEDKRiv87H74JL+15QDUmHlj5R8cnJBim7+SAWcsXBiqq8cmuKzal5MsVk1+4z+VOePVDqr5ojUbwfUEanwnFXzRCr8NGZ9kQqPvw85I3XX6I/UXQ7aLllZWVlZWVlZ9voDbFkjXMHW5j4AAAAASUVORK5CYII=" class="card-img-top" alt="">
+        <div class="card-body">
+          <h5 class="card-title">SENIOR</h5>
+          <p class="card-text">empresa de tecnologia</p>
+          <a href="#" class="btn btn-primary button">Go somewhere</a>
+        </div>
+      </div>
+    </div>
+</div> 
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+  </body>
+</html>
